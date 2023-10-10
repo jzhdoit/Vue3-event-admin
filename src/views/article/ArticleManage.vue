@@ -3,6 +3,7 @@ import { Delete, Edit } from '@element-plus/icons-vue'
 import { ref } from 'vue'
 import { artGetListService, artDelService } from '@/api/article.js'
 import { formatTime } from '@/utils/format'
+import ChannelSelect from './components/ChannelSelect.vue'
 import ArticleEdit from './components/ArticleEdit.vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 const articleList = ref([])

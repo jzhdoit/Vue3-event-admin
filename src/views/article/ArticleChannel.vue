@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { artGetChannelsService, artDelChannelService } from '@/api/article.js'
 import { Edit, Delete } from '@element-plus/icons-vue'
 import ChannelEdit from './components/ChannelEdit.vue'
+import { ElMessage, ElMessageBox } from 'element-plus'
 const channelList = ref([])
 const loading = ref(false)
 const dialog = ref()

@@ -5,6 +5,8 @@ import { useRouter } from 'vue-router'
 import { useUserStore } from '@/stores'
 import { userUpdatePassService } from '@/api/user.js'
 const router = useRouter()
+import { ElMessage } from 'element-plus'
+
 const userStore = useUserStore()
 const formRef = ref()
 const pwdForm = ref({

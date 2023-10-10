@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import { Plus, Upload } from '@element-plus/icons-vue'
 import { useUserStore } from '@/stores'
 import { userUploadAvatarService } from '@/api/user.js'
+import { ElMessage } from 'element-plus'
+
 const userStore = useUserStore()
 const imgUrl = ref(userStore.user.user_pic)
 const onUploadFile = (uploadFile) => {

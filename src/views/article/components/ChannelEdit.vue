@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { artEditChannelService, artAddChannelService } from '@/api/article.js'
+import { ElMessage } from 'element-plus'
 
 const dialogVisible = ref(false)
 const formModel = ref({

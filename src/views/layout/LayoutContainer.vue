@@ -11,6 +11,7 @@ import {
 } from '@element-plus/icons-vue'
 import avatar from '@/assets/default.png'
 import { useUserStore } from '@/stores'
+import { ElMessageBox } from 'element-plus'
 
 import router from '../../router'
 
@@ -115,7 +116,7 @@ const handldCommand = async (key) => {
       <el-main>
         <router-view></router-view>
       </el-main>
-      <el-footer>大事件 ©2023 Created by 程序员</el-footer>
+      <el-footer> ©2023 Created by 程序员</el-footer>
     </el-container>
   </el-container>
 </template>

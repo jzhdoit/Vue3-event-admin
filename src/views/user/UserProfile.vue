@@ -3,6 +3,7 @@ import PageContainer from '@/components/PageContainer.vue'
 import { useUserStore } from '@/stores'
 import { userUpdateInfoService } from '@/api/user.js'
 import { ref } from 'vue'
+import { ElMessage } from 'element-plus'
 
 const {
   user: { username, nickname, email, id },
